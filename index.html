@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Event</title>
+  <script>
+    const PASSWORD = "party2025"; // ← change this
+
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      if (input === PASSWORD) {
+        window.location.href = "party.html";
+      } else {
+        document.getElementById("error").textContent =
+          "Incorrect password. Try again.";
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background: #1c1c1c;
+    }
+    input {
+      padding: 0.5rem;
+      margin-top: 1rem;
+      width: 200px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    #error {
+      color: #ff6b6b;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>🎉 Private Party 🎉</h1>
+    <p>Enter the password to continue</p>
+    <input type="password" id="password" placeholder="Password" />
+    <br>
+    <button onclick="checkPassword()">Enter</button>
+    <div id="error"></div>
+  </div>
+</body>
+</html>
+
