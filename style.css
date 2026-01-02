@@ -96,3 +96,35 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Guest List Styling */
+.guest-list {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  background: #f0f4f4; /* same as info-card */
+  border-radius: 12px;
+}
+
+.guest-columns {
+  display: flex;
+  gap: 1.5rem; /* space between columns */
+  justify-content: space-between;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+.guest-column {
+  flex: 1; /* evenly distributed */
+  min-width: 120px; /* prevent too narrow columns */
+}
+
+.guest-column h4 {
+  font-family: 'Bebas Neue', sans-serif; /* headers in Bebas Neue */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #006d77; /* same teal as info-card headings */
+}
+
+.guest-column p {
+  margin: 0.2rem 0;
+  font-family: 'Inter', sans-serif; /* standard font for names */
+  font-size: 1rem;
+}
