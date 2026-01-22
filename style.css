@@ -116,7 +116,7 @@ a:hover {
   min-width: 120px; /* prevent too narrow columns */
 }
 
-.guest-column h4 {
+.guest-column h5 {
   font-family: 'Bebas Neue', sans-serif; /* headers in Bebas Neue */
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -127,4 +127,51 @@ a:hover {
   margin: 0.2rem 0;
   font-family: 'Inter', sans-serif; /* standard font for names */
   font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* FAQ navigation: centered group, aligned to text column */
+.faq-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+  max-width: 780px;          /* same as <p> */
+  display: flex;
+  justify-content: center; /* center the group as a whole */
+  gap: 2rem;               /* even spacing between links */
+}
+
+/* Remove inline-block behavior */
+.faq-nav li {
+  margin: 0;
+}
+
+/* Match your accent + heading style */
+.faq-nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fb6c1f;
+}
+
+/* FAQ category headers */
+h4 {
+  max-width: 780px;
+  margin: 4rem auto 1.2rem auto;   /* more separation from previous section */
+  padding-top: 0.5rem;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;              /* larger than questions */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #006d77;                 /* deep teal */
+  text-align: left;
+
+  border-top: 2px solid #ffd366;  /* subtle divider line */
 }
